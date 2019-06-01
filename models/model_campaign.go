@@ -1,19 +1,22 @@
 package models
 
-type campaigns struct {
-	Campaigns map[string]campaign
+// Campaigns struct
+type Campaigns struct {
+	Campaigns map[string]Campaign
 }
 
-type campaign struct {
+// Campaign struct
+type Campaign struct {
 	ID         string
 	Price      float64
-	Content    content
+	Content    Content
 	Countries  []string
 	Devices    []string
 	Placements []string
 }
 
-type content struct {
+// Content struct
+type Content struct {
 	Title       string
 	Description string
 	Landing     string
